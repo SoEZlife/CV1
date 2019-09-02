@@ -1,0 +1,219 @@
+.header{
+    position: relative;
+    font-family: Pingfang SC,Lantinghei SC,Helvetica Neue,Helvetica,sans-serif;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.job {
+    color: rgb(136, 136, 136);
+    float: left;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.name {
+    float: left;
+    font-size: 35px;
+}
+
+.header-img {
+    float: right;
+    clear: both;
+    font-style: normal;
+	font-size: 14px;
+}
+
+.clear-fix::before,
+.clear-fix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.main-header {
+    font-family: Microsoft JhengHei,Microsoft YaHei,STHeiti SC,SimHei;
+	text-align: center;
+}
+
+ .skill-content li {
+    list-style: none;
+    background-color: antiquewhite;
+    text-indent: 1em;
+    font-family: "montserrat",sans-serif;
+    position: relative;
+    transition: all /* linear */ 1s;
+} 
+
+.skill-content h4 {
+    height: 50px;
+    line-height: 50px;
+}
+
+.skill-content .content {
+    position: absolute;
+    left: 150px;
+    top: 12px;
+    z-index: 9999;
+    width: 350px;
+    padding: 10px;
+    background: hsla(0,0%,100%,.8);
+    box-shadow: 0 0 3px rgba(0,0,0,.2);
+    border-radius: 4px;
+    line-height: 1.5;
+    display: none;
+}
+
+.skill-content ul {
+    padding-left: 0px;
+}
+
+.skill-content li:first-child,
+.skill-content li:nth-child(2) {
+    color: rgb(42,125,169);
+    background: rgb(214,239,255);
+    border-left: 4px solid rgb(52, 152, 219);
+}
+
+.skill-content li:nth-child(3),
+.skill-content li:nth-child(4) {
+    color: rgb(100,156,15);
+    background: rgb(234,246,208);
+    border-left: 4px solid rgb(128, 189, 1);
+}
+
+@keyframes javascript {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes html {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes photoshop {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 45%;
+    }
+}
+
+@keyframes vue {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 35%;
+    }
+}
+
+
+.skill-content li:first-child {
+    width: 70%;
+    animation: javascript 1.25s;
+}
+
+.skill-content li:nth-child(2) {
+    width: 85%;
+    animation: html 1.25s;
+}
+
+.skill-content li:nth-child(3) {
+    width: 45%;
+    animation: photoshop 1.25s;
+}
+
+.skill-content li:nth-child(4) {
+    width:35%;
+    animation: vue 1.25s;
+}
+
+.skill-content li:hover .content {
+    display: inline;
+}
+
+.skill-content li:nth-child(4):hover {
+    width: 75%;
+}
+
+.edu,
+.foot {
+    background: url(/img/bg.jpg) repeat-x;
+}
+
+.edu-content .content-l {
+    border-right: 2px dashed #ccc;
+}
+
+.pro{
+    padding: 20px;
+    border-bottom: dashed rgb(204, 204, 204);
+}
+
+.pro-r img{
+    transition: all 0.7s;
+}
+.project .pro-r a:hover img{
+    transform: translate(-5px,-5px)
+}
+
+@media screen and (min-width:800px) {
+    .pro-l{
+        float: left;
+    }
+    
+    .pro-r{
+        float: right;
+    }
+    
+    .pro-r img{
+        height: 200px;
+        width: 267px;
+    }
+}
+
+.foot{
+    transition: all ease-in-out 250ms;
+}
+
+.foot a{
+    /* color: white; */
+    color: black;
+    text-decoration: none;
+    font-size: 60px;
+    transition: all ease-in-out 0.6s;
+}
+
+.foot a:hover{
+    color: #b9b9b9;
+}
+
+@media screen and (max-width:799px) {
+    /* .pro-l{
+        background-color: #B9B9B9;
+    } */
+    
+    .pro-r{
+        text-align: center;
+        width: 90%;
+        margin: 12px auto 0;
+    }
+    
+    .pro-r img{
+        width: 90%;
+    }
+}
+
+.top {
+    margin-top: 100px;
+}
